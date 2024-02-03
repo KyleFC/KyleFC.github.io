@@ -113,16 +113,16 @@
 
 <script>
 Q3D.Config.allVisible = true;
-Q3D.Config.localMode = true;
+
 
 var container = document.getElementById("view"),
     app = Q3D.application,
     gui = Q3D.gui;
 
 app.init(container);       // initialize viewer
-// filler
+
 // load the scene
-app.loadSceneFile("./data/index/scene.js", function (scene) {
+app.loadSceneFile("./data/index/scene.json", function (scene) {
   // scene file has been loaded
   app.start();
 }, function (scene) {
